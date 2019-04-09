@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Temparature = function (temp) {
+        this.temp = temp;
+
+        this.convertToF = function () {
+            return this.temp*(9/5) + 32;
+        };
+        this.convertToK = function () {
+            return this.temp + 273.15;
+        };
+    };
+
+    let doC = new Temparature(parseInt(prompt('Nhập nhiệt độ tương ứng')));
+    alert(doC.convertToF());
+    alert(doC.convertToK());
+</script>
+</body>
+</html>
